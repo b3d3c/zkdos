@@ -17,7 +17,7 @@ except kazoo.exceptions.ConnectionLoss:
     sys.exit(1)
 
 
-for i in range (20005, 1000000):
+for i in range (1, 1000000):
     path = "/zookeeper/" + str(i)
     what = 1024 * 512 * 'a'
     what.encode()
